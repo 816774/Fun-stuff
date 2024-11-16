@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "funstuff",
+	"version": "${version}",
+	"name": "Fun Stuff",
+	"description": "THis is a random mod",
+	"authors": [
+		"Sophia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/funstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sophia.funstuff.FunStuff"
+		],
+		"fabric-datagen": [
+			"com.sophia.funstuff.FunStuffDataGenerator"
+		],
+		"client": [
+			"com.sophia.funstuff.FunStuffClient"
+		]
+	},
+	"mixins": [
+		"funstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
