@@ -1,5 +1,7 @@
 package com.sophia.funstuff;
 
+import com.sophia.funstuff.block.ModBlocks;
+import com.sophia.funstuff.item.ModItemGroups;
 import com.sophia.funstuff.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,7 +15,10 @@ public class FunStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerModItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }
