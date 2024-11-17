@@ -15,12 +15,25 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool PinkGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
+
+        PinkGarnetPool.stairs(ModBlocks.PINK_GARNET_STAIRS);
+        PinkGarnetPool.slab(ModBlocks.PINK_GARNET_SLAB);
+
+        PinkGarnetPool.button(ModBlocks.PINK_GARNET_BUTTON);
+        PinkGarnetPool.pressurePlate(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+        PinkGarnetPool.fenceGate(ModBlocks.PINK_GARNET_FENCE_GATE);
+        PinkGarnetPool.wall(ModBlocks.PINK_GARNET_WALL);
+        PinkGarnetPool.fence(ModBlocks.PINK_GARNET_FENCE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
     }
 
     @Override

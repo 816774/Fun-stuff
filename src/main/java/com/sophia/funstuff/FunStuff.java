@@ -22,7 +22,7 @@ public class FunStuff implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 2000);
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 
 	}
 }
