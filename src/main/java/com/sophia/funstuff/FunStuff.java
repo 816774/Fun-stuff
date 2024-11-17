@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//hoi
 public class FunStuff implements ModInitializer {
 	public static final String MOD_ID = "funstuff";
 
