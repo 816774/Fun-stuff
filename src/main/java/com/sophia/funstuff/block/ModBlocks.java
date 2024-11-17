@@ -1,6 +1,7 @@
 package com.sophia.funstuff.block;
 
 import com.sophia.funstuff.FunStuff;
+import com.sophia.funstuff.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -28,7 +29,7 @@ public class ModBlocks {
     public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("deepslate_pink_garnet_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(30, 70),
                 AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
-
+public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block) {
