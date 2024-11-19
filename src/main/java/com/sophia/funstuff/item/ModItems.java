@@ -2,9 +2,7 @@ package com.sophia.funstuff.item;
 
 import com.sophia.funstuff.FunStuff;
 import com.sophia.funstuff.item.custom.ChiselItem;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -36,10 +34,5 @@ public class ModItems {
 
     public static void registerModItems() {
         FunStuff.LOGGER.info("Registering Mod Items for " + FunStuff.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
-            entries.add(PINK_GARNET);
-            entries.add(RAW_PINK_GARNET);
-        } );
     }
 }
